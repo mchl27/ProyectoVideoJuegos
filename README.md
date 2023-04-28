@@ -8,7 +8,7 @@ Este es un servicio web desarrollado con C#, ASP.NET y SQL Server para una tiend
 - Búsqueda de juegos por título, género, protagonistas, productor, etc.
 - Catálogo de juegos
 - Gestion para alquilar
-- Administración de usuarios, juegos y pedidos desde una interfaz de administrador
+- Administración de usuarios, juegos, clientes, precios y Alquileres desde una interfaz
 
 ## Tecnologías utilizadas
 
