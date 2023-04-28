@@ -1,0 +1,21 @@
+﻿@model ProyectoVideoJuegos.Models.Alquilere
+
+
+@{
+    ViewData["Title"] = "Titulomasrentado";
+    Layout = "~/Views/Shared/_Layout_Principal.cshtml";
+}
+
+<h1>Titulo mas rentado</h1>
+
+<p>En esta sección podrás encontrar el título de juego más rentado de nuestro catálogo. 
+    Conoce cuál es el juego favorito de nuestros clientes y descubre por qué es tan popular. 
+    ¡No te pierdas la oportunidad de experimentar la emoción de nuestro juego más exitoso!</p>
+
+<p>El titulo mas rentado es: @ViewData["tituloMasRentado"]</p>
+
+<form action="/Principal/Consultar">
+    <button type="submit" class="btn btn-secondary">Regresar</button>
+</form>
+
+<img src="~/Imagenes/8. Tituloss.png">

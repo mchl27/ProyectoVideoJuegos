@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ProyectoVideoJuegos.Models.Alquilere>
+
+@{
+    ViewData["Title"] = "Alquiler";
+    Layout = "~/Views/Shared/_Layout_Principal.cshtml";
+}
+
+<h1>Alquiler</h1>
+
+<p>
+    <a asp-action="Create">Crear nuevo alquiler</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TituloNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaAlquiler)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaVencimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreNavigation.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TituloNavigation.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaAlquiler)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaVencimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdAlquiler">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdAlquiler">Detalle</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdAlquiler">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<form action="/Principal/Editar">
+    <button type="submit" class="btn btn-secondary">Regresar</button>
+</form>

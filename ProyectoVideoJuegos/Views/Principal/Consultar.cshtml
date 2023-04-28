@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Consultar";
+    Layout = "~/Views/Shared/_Layout_Principal.cshtml";
+}
+
+<h1>Consultas</h1>
+
+<p>
+</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Descripción</th>
+                <th>Consultar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alquiler</td>
+                <td>
+                    Consulta listado de Alquiler por:
+                    <ul>
+                        <li>    Cliente mas frecuente</li>
+                        <li>	Titulo mas vendido</li>
+                        <li>	Ventas del dia</li>
+                        <li>    Juego menos rentado por rango de edades de los clientes</li>
+                    </ul>
+                </td>
+                <td>
+                    @Html.ActionLink("Cliente mas Frecuente", "Clientemasfrecuente", "Alquileres") |
+                    @Html.ActionLink("Titulo mas rentado", "Titulomasrentado", "Alquileres") |
+                    @Html.ActionLink("Ventas del dia", "Ventasdia", "Alquileres") |
+                </td>
+            </tr>
+            <tr>
+                <td>Juego</td>
+                <td>
+                    Consulta listado de juegos por:
+                    <ul>
+                        <li>    Director de Juego</li>
+                        <li>	Protagonistas del juego</li>
+                        <li>	Productor y/o marca del juego</li>
+                    </ul>
+                </td>
+                <td>
+                    @Html.ActionLink("Director", "Juegosconsulta", "Juegoes") |
+                    @Html.ActionLink("Protagonista", "Juegosconsulta1", "Juegoes") |
+                    @Html.ActionLink("Productor", "Juegosconsulta2", "Juegoes")
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="/Principal/Index">
+        <button type="submit" class="btn btn-secondary">Regresar</button>
+    </form>
+    <img src="~/Imagenes/5. Consultas.png" />
+    

@@ -1,0 +1,153 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="~/css/Index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <section class="contenido-header">
+            <section class="textos-header">
+                <h1>¿Eres un amante de los videojuegos?</h1>
+                <p>Entonces has llegado al lugar correcto. 
+                En nuestro servicio de alquiler de videojuegos, puedes encontrar una amplia selección 
+                de títulos para todas las consolas populares. ¿Por qué gastar dinero en juegos que 
+                solo vas a jugar una vez? ¡Alquila con nosotros y ahorra!</p>
+                <a href="#">Conocer más</a>
+            </section>
+            <img src="~/Imagenes/1. Principal.png" />
+        </section>
+    </div>
+
+    <section class="about-us">
+        <div class="contenedor1">
+            <h2 class="titulo">¡Las mejores Consolas de VideoJuegos!</h2>
+            <div class="contenedor-articulo">
+                <div class="articulo">
+                    <img src="~/imagenes/2. Icono xbox.png" alt="">
+                    <h3>Xbox Series X/S</h3>
+                    <p>La última consola de Microsoft, lanzada también en 2020, ofrece una experiencia de juego de alta calidad y una amplia biblioteca de juegos.</p>
+                    @Html.ActionLink("Ver más --->", "Juegos", "Juegoes")
+                </div>
+                <div class="articulo">
+                    <img src="~/imagenes/2. Icono Play.png" alt="">
+                    <h3>PlayStation 5</h3>
+                    <p>La última consola de Sony, lanzada en 2020, cuenta con un potente hardware y una gran cantidad de juegos exclusivos.</p>
+                    <a href="#">Ver mas ---></a>
+                </div>
+                <div class="articulo">
+                    <img src="~/imagenes/2. Icono nintendo.png" alt="">
+                    <h3>Nintendo Switch</h3>
+                    <p>La consola híbrida de Nintendo lanzada en 2017, que permite jugar en modo portátil en una televisión y cuenta con una gran variedad de juegos exclusivos.</p>
+                    <a href="#">Ver mas ---></a>
+                </div>
+                <div class="articulo">
+                    <img src="~/imagenes/2. Icono Play.png" alt="">
+                    <h3>PlayStation 4</h3>
+                    <p>La anterior consola de Sony, lanzada en 2013, con una enorme biblioteca de juegos y una gran cantidad de títulos exclusivos.</p>
+                    <a href="#">Ver mas ---></a>
+                </div>
+                <div class="articulo">
+                    <img src="~/imagenes/2. Icono xbox.png" alt="">
+                    <h3>Xbox One</h3>
+                    <p>La anterior consola de Microsoft, lanzada en 2013, que cuenta con una gran cantidad de juegos y una experiencia de juego fluida.</p>
+                    <a href="#">Ver mas ---></a>
+                </div>
+                <div class="articulo">
+                    <img src="~/imagenes/2. Icono nintendo.png" alt="">
+                    <h3>Nintendo Wii U</h3>
+                    <p>Lanzada en 2012, esta consola de Nintendo tuvo un catálogo exclusivo de juegos muy interesante, aunque no tuvo tanto éxito como sus predecesoras.</p>
+                    <a href="#">Ver mas ---></a>
+                </div>
+                <div class="articulo">
+                    <img src="~/imagenes/2. Icono Play.png" alt="">
+                    <h3>PlayStation 3</h3>
+                    <p>Lanzada en 2006, esta consola de Sony fue revolucionaria por su tiempo y tuvo una enorme biblioteca de juegos.</p>
+                    <a href="#">Ver mas ---></a>
+                </div>
+                <div class="articulo">
+                    <img src="~/imagenes/2. Icono xbox.png" alt="">
+                    <h3>Xbox 360</h3>
+                    <p>Lanzada en 2005, la consola de Microsoft tuvo una enorme popularidad y un gran catálogo de juegos exclusivos.</p>
+                    <a href="#">Ver mas ---></a>
+                </div>
+                <div class="articulo">
+                    <img src="~/imagenes/2. Icono nintendo.png" alt="">
+                    <h3>Nintendo GameCube</h3>
+                    <p>Lanzada en 2001, esta consola de Nintendo tuvo un catálogo exclusivo de juegos muy interesante y sigue siendo muy querida por muchos jugadores.</p>
+                    <a href="#">Ver mas ---></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="results">
+        <div class="contenedor1 conten-results">
+            <section class="numbers">
+                <div class="number">
+                    <h4>-10%</h4>
+                    <p>Cyberpunk 2077</p>
+                    <p>Antes: <del>$105.500</del></p>
+                    <p>Ahora: $94,950</p>
+                </div>
+                <div class="number">
+                    <h4>-10%</h4>
+                    <p>God of War</p>
+                    <p>Antes: <del>$67.300</del></p>
+                    <p>Ahora: $60.000</p>
+                </div>
+                <div class="number">
+                    <h4>-20%</h4>
+                    <p>Halo Infinite</p>
+                    <p>Antes: <del>$37.600</del></p>
+                    <p>Ahora: $30.000</p>
+                </div>
+                <div class="number">
+                    <h4>-20%</h4>
+                    <p>Super Mario Bros</p>
+                    <p>Antes: <del>$37.600</del></p>
+                    <p>Ahora: $30.000</p>
+                </div>
+            </section>
+            <section class="results-text">
+                <h4>Ofertas</h4>
+                <p>
+                    No lo dudes más, aprovecha esta oportunidad de probar juegos nuevos sin gastar demasiado dinero. 
+                    ¡Reserva ahora y comienza a disfrutar de tus videojuegos favoritos!
+                </p>
+                @Html.ActionLink("Ver más --->", "Juegos", "Juegoes")
+            </section>
+        </div>
+    </section>
+
+    <section class="contenedor1 services">
+
+        <img src="~/Imagenes/3. Secundaria.png" alt="">
+
+        <div class="box-skills">
+            <h4>Compromiso</h4>
+            <h4>Honestidad</h4>
+            <h4>Pasión</h4>
+            <h4>Vocación</h4>
+            <h4>Agilidad</h4>
+            <h4>Responsabilidad</h4>
+            <h4>Innovacion</h4>
+            <h4>Flexibilidad</h4>
+            <h4>Excelencia</h4>
+        </div>
+
+    </section>
+
+    <script src="https://kit.fontawesome.com/d49ad5ab73.js" crossorigin="anonymous"></script>
+</body>
+</html>

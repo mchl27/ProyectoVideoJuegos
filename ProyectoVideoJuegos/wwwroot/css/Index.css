@@ -1,0 +1,361 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1d273b;
+    font-weight: 300;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor1 {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+/* Header (El encabezado de la pagina web) */
+
+/*header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 2);
+    position: fixed;
+    top: 0;
+    z-index: 100;*/
+    /* transition: ease-in-out 0.5s; */
+/*}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+
+    .nav .logo {
+        height: 80px;
+    }
+
+        .nav .logo img {
+            width: 85px;
+            height: 100%;
+            vertical-align: top;
+        }*/
+
+.enlaces-header {
+    font-weight: 300;
+}
+
+.nav .enlaces-header a {
+    color: #5D6678;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.enlaces-header > a:hover {
+    color: #ff0000;
+    transition: color .5s;
+}
+
+/*.hamburguer {
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;*/
+    /* transition: color 0.5s ease-in; */
+/*}*/
+
+    .hamburguer > i {
+        font-size: 25px;
+        line-height: 80px;
+    }
+
+.contenido-header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .contenido-header > img {
+        width: 550px;
+        animation: ease-in animat 1s;
+    }
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.textos-header {
+    margin: 0 0 0 30px;
+}
+
+.contenido-header p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5D6678;
+}
+
+.contenido-header a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #ff0000;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(208, 208, 208, 0.46);
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+
+/* About us (Apartado para los sevicios de la empresa) */
+
+.about-us {
+    background: #f2f2f2;
+}
+
+.contenedor-articulo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.articulo {
+    width: 29%;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+}
+
+    .articulo:hover {
+        box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    }
+
+    .articulo > i {
+        font-size: 30px;
+        color: #fff;
+        background: #ffffff;
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        padding-top: 20px;
+        border-radius: 50%;
+        box-shadow: 0 8px 32px rgba(119, 117, 106, 0.46);
+    }
+
+    .articulo > img {
+        font-size: 30px;
+        background: #ffffff;
+        display: inline-block;
+        width: 105px;
+        height: 105px;
+        /*text-align: center;*/
+        /*padding-top: 20px;*/
+        border-radius: 50%;
+        box-shadow: 0 8px 32px rgba(119, 117, 106, 0.46);
+    }
+
+    .articulo > h3 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .articulo > p {
+        font-weight: 100;
+        color: #5d6678;
+        margin-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .articulo > a {
+        color: #5d6678;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+        .articulo > a:hover {
+            color: #ff0000;
+            transition: color .5s;
+        }
+
+
+
+/* Question (Apartado que se encarga de el manejo de los precios) */
+
+.questions {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .questions > img {
+        width: 550px;
+    }
+
+.textos-questions {
+    margin: 0 0 0 30px;
+}
+
+    .textos-questions p {
+        font-weight: 100;
+        margin-top: 14px;
+        color: #5D6678;
+    }
+
+
+    .textos-questions a {
+        margin: 28px 0 0 0;
+        width: 130px;
+        display: inline-block;
+        background: #ff0000;
+        text-align: center;
+        color: #fff;
+        padding: 12px 0;
+        text-decoration: none;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 14px;
+        border-radius: 5px;
+        box-shadow: 0 8px 32px rgba(121, 116, 92, 0.46);
+    }
+
+
+/* Results (Apartado para los precios de la empresa sobre sus productos) */
+
+.results {
+    background: #2570ff;
+    padding-top: 30px;
+}
+
+.conten-results {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.numbers {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+    .numbers .number {
+        width: 45%;
+        background: rgba(255, 255, 255, .2);
+        color: #fff;
+        border-radius: 10px;
+        padding: 40px 35px;
+        margin-bottom: 20px;
+    }
+
+        .numbers .number h4 {
+            color: #fff;
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .numbers .number p {
+            color: #f2f5fc;
+            font-weight: 300;
+        }
+
+.results-text {
+    width: 37%;
+}
+
+    .results-text h4 {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .results-text p {
+        color: #fff;
+        font-weight: 300;
+        margin: 20px 0;
+    }
+
+
+    .results-text > a {
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid #fff;
+        padding: 10px 0;
+        width: 120px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+
+/* services (Los valores corporativos de la empresa)*/
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .services > img {
+        width: 500px;
+    }
+
+.box-skills {
+    margin: 30px 30px 0 0;
+}
+
+    .box-skills h4 {
+        font-size: 24px;
+        background: #f2f2f2;
+        width: 350px;
+        border-radius: 6px;
+        padding: 10px 0 10px 15px;
+        margin-bottom: 10px;
+    }

@@ -1,0 +1,22 @@
+﻿@model ProyectoVideoJuegos.Models.Alquilere
+
+
+@{
+    ViewData["Title"] = "Clientemasfrecuente";
+    Layout = "~/Views/Shared/_Layout_Principal.cshtml";
+}
+
+<h1>Cliente más frecuente</h1>
+
+<p></p>
+
+<p>Descubre quién es el cliente más frecuente en nuestra tienda y conoce sus preferencias en nuestros servicios y productos.</p>
+
+<p>El cliente más frecuente es: @ViewData["clienteMasFrecuente"]</p>
+
+
+<form action="/Principal/Consultar">
+    <button type="submit" class="btn btn-secondary">Regresar</button>
+</form>
+
+<img src="~/Imagenes/7. Clientemasfrecuente.png" />

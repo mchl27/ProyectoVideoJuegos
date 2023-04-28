@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout_Login.cshtml";
+}
+
+<form method="post">
+    <div class="form-group">
+        <label for="nombreUsuario">Nombre de usuario:</label>
+        <p></p>
+        <input type="text" name="nombreUsuario" id="nombreUsuario" required />
+    </div>
+    <div class="form-group">
+        <label for="contrasena">Contraseña:</label>
+        <p></p>
+        <input type="password" name="contrasena" id="contrasena" required />
+    </div>
+    <button type="submit" class="btn btn-danger">Login</button>
+    
+
+    <div asp-validation-summary="All"></div>
+
+</form>
+<form action="/Principal/Create">
+    <button type="submit" class="btn btn-secondary">Registrar</button>
+</form>

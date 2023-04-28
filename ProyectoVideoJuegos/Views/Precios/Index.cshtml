@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ProyectoVideoJuegos.Models.Precio>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout_Principal.cshtml";
+}
+
+<h1>Precios</h1>
+
+<p>
+    <a asp-action="Create">Crear un nuevo precio</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TituloNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaFin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio1)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TituloNavigation.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaFin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio1)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdPrecio">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdPrecio">Detalle</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdPrecio">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<form action="/Principal/Editar">
+    <button type="submit" class="btn btn-secondary">Regresar</button>
+</form>

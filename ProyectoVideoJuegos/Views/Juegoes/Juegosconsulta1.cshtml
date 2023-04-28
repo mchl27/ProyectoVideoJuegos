@@ -1,0 +1,85 @@
+﻿@model IEnumerable<ProyectoVideoJuegos.Models.Juego>
+
+@{
+    ViewData["Title"] = "Juegos";
+    Layout = "~/Views/Shared/_Layout_Principal.cshtml";
+}
+
+<h1>Juegos</h1>
+
+<form asp-controller="Juegoes" asp-action="Juegosconsulta1">
+    <p>
+        Buscar Protagonista: <input type="text" name="buscar" class="form-text" />
+        <input type="submit" value="Buscar" class="btn-danger" />
+    </p>
+</form>
+
+<p>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdJuego)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Año)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Protagonistas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Director)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Productor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Plataforma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioAlquiler)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdJuego)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Año)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Protagonistas)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Director)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Productor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Plataforma)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrecioAlquiler)
+                </td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
+<form action="/Principal/Consultar">
+    <button type="submit" class="btn btn-secondary">Regresar</button>
+</form>
+
+<script src="https://kit.fontawesome.com/d49ad5ab73.js" crossorigin="anonymous"></script>

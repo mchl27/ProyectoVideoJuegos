@@ -1,0 +1,22 @@
+﻿@model ProyectoVideoJuegos.Models.Alquilere
+
+
+@{
+    ViewData["Title"] = "Ventasdia";
+    Layout = "~/Views/Shared/_Layout_Principal.cshtml";
+}
+
+<h1>Ventas del dia</h1>
+
+<p>
+    Descripción: En esta sección se muestra un resumen de las ventas del día, incluyendo el total de ingresos.
+     ¡Mantente al día con el desempeño de tu negocio día a día!
+</p>
+
+<p>Las ventas totales del dia : $@ViewBag.TotalVentas</p>
+
+<form action="/Principal/Consultar">
+    <button type="submit" class="btn btn-secondary">Regresar</button>
+</form>
+
+<img src="~/Imagenes/9. Ventas.png">

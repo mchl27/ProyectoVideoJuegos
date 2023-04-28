@@ -1,0 +1,88 @@
+﻿@model ProyectoVideoJuegos.Models.Alquilere
+
+@{
+    ViewData["Title"] = "Alquilar Detalle";
+    Layout = "~/Views/Shared/_Layout_Principal.cshtml";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Compra Alquiler</h1>
+        <p>Cliente: @Html.DisplayFor(model => model.NombreNavigation.Nombre)</p>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Título del videojuego</th>
+                    <th>Fecha de compra</th>
+                    <th>Fecha de vencimiento</th>
+                    <th class="text-right">Precio total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Html.DisplayFor(model => model.TituloNavigation.Titulo)</td>
+                    <td>@Html.DisplayFor(model => model.FechaAlquiler)</td>
+                    <td>@Html.DisplayFor(model => model.FechaVencimiento)</td>
+                    <td class="text-right">@Html.DisplayFor(model => model.Precio)</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-right"><strong>Total:</strong></td>
+                    <td class="text-right">@Html.DisplayFor(model => model.Precio)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p></p>
+
+        <img src="~/Imagenes/6. Compraalquiler.png" />
+
+    </main>
+
+    <footer>
+        <p>Fecha de emisión: 25/04/2023</p>
+
+        <div>
+            <a asp-action="Alquilar">Regresar a la lista</a>
+        </div>
+
+    </footer>
+</body>
+
+<p></p>
+

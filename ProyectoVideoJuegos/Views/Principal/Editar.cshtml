@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Editar";
+    Layout = "~/Views/Shared/_Layout_Principal.cshtml";
+}
+
+<h1>Editar</h1>
+
+<p>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Descripción</th>
+            <th>Editar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Alquileres</td>
+            <td>@Html.ActionLink("Editar", "Index", "Alquileres")</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Clientes</td>
+            <td>@Html.ActionLink("Editar", "Index", "Clientes")</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Juegos</td>
+            <td>@Html.ActionLink("Editar", "Index", "Juegoes")</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Precios</td>
+            <td>@Html.ActionLink("Editar", "Index", "Precios")</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Usuarios</td>
+            <td>@Html.ActionLink("Editar", "Index", "Usuarios")</td>
+        </tr>
+    </tbody>
+</table>
+
+<form action="/Principal/Index">
+    <button type="submit" class="btn btn-secondary">Regresar</button>
+</form>
