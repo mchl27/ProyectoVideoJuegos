@@ -1,4 +1,4 @@
-# ProyectoVideoJuegos
+# ProyectoVideoJuegos - Sophos Solution / Politecnico Internacional
 
 Este es un servicio web desarrollado con C#, ASP.NET y SQL Server para una tienda de videojuegos en línea. La aplicación permite a los usuarios buscar, comprar y descargar juegos de una amplia variedad de plataformas.
 
@@ -23,7 +23,7 @@ Este es un servicio web desarrollado con C#, ASP.NET y SQL Server para una tiend
 3. Ejecuta el proyecto desde Visual Studio o publica la aplicación en un servidor web.
 4. Crea la base de datos en SQLSERVER correr el scrip DDL luego el DML.
 5. En visual studio instalar paquetes nuget SQLSERVER / TOOLS.
-6.Ejecutar Scaffold para conexion con la base de datos y  agregar los modelos de las tablas creadas en SqlServer: Scaffold-DbContext "server="NOMBRE_SERVIDOR"; database="NOMBRE_BASE_DE_DATOS"; integrated security=true;" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models.
+6. Ejecutar Scaffold para conexion con la base de datos y  agregar los modelos de las tablas creadas en SqlServer: Scaffold-DbContext "server="NOMBRE_SERVIDOR"; database="NOMBRE_BASE_DE_DATOS"; integrated security=true;" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models.
 
 
 ## Contribución
